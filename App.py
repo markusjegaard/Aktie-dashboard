@@ -4,6 +4,16 @@ import plotly.graph_objects as go
 import streamlit as st
 from datetime import datetime
 
+# Definer aktielister
+market_stocks = {
+    'Danske': ['NOVO-B.CO', 'MAERSK-B.CO', 'DSV.CO', 'CARLB.CO', 'DANSKE.CO', 'NZYM-B.CO', 'ORSTED.CO'],
+    'Amerikanske': ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'META', 'TSLA'],
+    'Europæiske': ['SIE.DE', 'ASML.AS', 'LVMH.PA', 'NESN.SW', 'ROG.SW', 'TTE.PA', 'SAP.DE']
+}
+
+# Start dashboard
+def create_dashboard():
+    st.set_page_config(layout="wide", page_title="Aktie Anbefalinger")
 # Sæt standard renderer til browser
 pio.renderers.default = "browser"
 
