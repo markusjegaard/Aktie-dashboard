@@ -1,15 +1,8 @@
-from datetime import datetime, timedelta
 import yfinance as yf
 import pandas as pd
-import numpy as np
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-import matplotlib.pyplot as plt
-import requests
-from bs4 import BeautifulSoup
-import json
-import plotly.io as pio
 import streamlit as st
+from datetime import datetime
 
 # Sæt standard renderer til browser
 pio.renderers.default = "browser"
